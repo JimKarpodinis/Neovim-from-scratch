@@ -15,6 +15,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
 	vim.cmd([[packadd packer.nvim]])
 end
 
+
 -- Autocommand that reloads neovim whenever you save the plugins.lua file
 vim.cmd([[
   augroup packer_user_config
@@ -94,6 +95,7 @@ return packer.startup(function(use)
   -- External 
   use {"untitled-ai/jupyter_ascending"}
   use{"EdenEast/nightfox.nvim"}
+  use{"tpope/vim-fugitive"}
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
