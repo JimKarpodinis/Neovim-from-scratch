@@ -97,6 +97,8 @@ return packer.startup(function(use)
   use{"EdenEast/nightfox.nvim"}
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
+  -- CoPilot
+  use{"github/copilot.vim"}
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
